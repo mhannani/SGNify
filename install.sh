@@ -6,10 +6,10 @@ echo -e "\nAfter registering at https://sgnify.is.tue.mpg.de/, provide your cred
 username=mohamed_hannani@yahoo.com
 password=12az45qs78wx
 
-echo -e "\nDownloading SGNify..."
-wget --post-data "username=$username&password=$password" 'https://download.is.tue.mpg.de/download.php?domain=sgnify&resume=1&sfile=data.zip' -O 'data.zip' --no-check-certificate --continue
-unzip data.zip -d data/
-rm data.zip
+# echo -e "\nDownloading SGNify..."
+# wget --post-data "username=$username&password=$password" 'https://download.is.tue.mpg.de/download.php?domain=sgnify&resume=1&sfile=data.zip' -O 'data.zip' --no-check-certificate --continue
+# unzip data.zip -d data/
+# rm data.zip
 
 GIT_LFS_SKIP_SMUDGE=1 git submodule update --init --recursive
 conda env create -f environment.yml 
