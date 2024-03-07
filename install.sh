@@ -18,6 +18,9 @@ GIT_LFS_SKIP_SMUDGE=1 git submodule update --init --recursive
 conda env create -f environment.yml 
 eval "$(conda shell.bash hook)"
 git submodule update --init --recursive
+
+echo "activating sgnify env"
+
 conda activate sgnify
 
 cd spectre
