@@ -18,6 +18,7 @@ GIT_LFS_SKIP_SMUDGE=1 git submodule update --init --recursive
 conda env create -f environment.yml 
 eval "$(conda shell.bash hook)"
 git submodule update --init --recursive
+conda activate sgnify
 
 cd spectre
 echo -e "\nDownload pretrained SPECTRE model..."
