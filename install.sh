@@ -19,15 +19,15 @@ conda env create -f environment.yml
 eval "$(conda shell.bash hook)"
 git submodule update --init --recursive
 
-echo "activating sgnify env"
+# echo "activating sgnify env"
 
-conda activate sgnify
+# conda activate sgnify
 
-cd spectre
-echo -e "\nDownload pretrained SPECTRE model..."
-gdown --id 1vmWX6QmXGPnXTXWFgj67oHzOoOmxBh6B
-mkdir -p pretrained/
-mv spectre_model.tar pretrained/
-cd ..
+# cd spectre
+# echo -e "\nDownload pretrained SPECTRE model..."
+# gdown --id 1vmWX6QmXGPnXTXWFgj67oHzOoOmxBh6B
+# mkdir -p pretrained/
+# mv spectre_model.tar pretrained/
+# cd ..
 
-cp -r data/FLAME2020 spectre/data/FLAME2020
+# cp -r data/FLAME2020 spectre/data/FLAME2020
