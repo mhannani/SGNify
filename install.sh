@@ -13,11 +13,12 @@ password=12az45qs78wx
 
 # Load conda initialization in current shell session
 echo 'source /root/miniconda3/etc/profile.d/conda.sh' | tee -a ~/.bashrc
+source /root/miniconda3/etc/profile.d/conda.sh
 
 echo "creating env"
 GIT_LFS_SKIP_SMUDGE=1 git submodule update --init --recursive
-# conda env create -f environment.yml 
-# eval "$(conda shell.bash hook)"
+conda env create -f environment.yml 
+eval "$(conda shell.bash hook)"
 git submodule update --init --recursive
 
 # echo "activating sgnify env"
