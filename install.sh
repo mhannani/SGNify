@@ -11,6 +11,9 @@ password=12az45qs78wx
 # unzip data.zip -d data/
 # rm data.zip
 
+# Load conda initialization in current shell session
+source /root/miniconda3/etc/profile.d/conda.sh
+
 GIT_LFS_SKIP_SMUDGE=1 git submodule update --init --recursive
 conda env create -f environment.yml 
 eval "$(conda shell.bash hook)"
