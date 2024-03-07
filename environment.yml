@@ -4,7 +4,6 @@ channels:
   - conda-forge
   - nvidia
   - fastai
-  - conda-forge/label/cf202003
 dependencies:
   - python==3.10.*
   - pip
@@ -19,11 +18,11 @@ dependencies:
   - omegaconf
   - openh264
   - pyrender
-  - pytorch
-  - pytorch-cuda
   - pytorch3d::pytorch3d
   - scikit-learn
+  - pytorch
   - torchvision
+  - pytorch-cuda=11.8
   - tqdm
   - trimesh
   - yacs
