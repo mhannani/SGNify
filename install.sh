@@ -12,7 +12,7 @@ password=12az45qs78wx
 # rm data.zip
 
 # Load conda initialization in current shell session
-# source /root/miniconda3/etc/profile.d/conda.sh
+echo 'source /root/miniconda3/etc/profile.d/conda.sh' | tee -a ~/.bashrc
 
 echo "creating env"
 GIT_LFS_SKIP_SMUDGE=1 git submodule update --init --recursive
