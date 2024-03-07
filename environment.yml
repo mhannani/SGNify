@@ -3,20 +3,22 @@ channels:
   - pytorch
   - conda-forge
   - nvidia
+  - fastai
+  - conda-forge/label/cf202003
 dependencies:
   - python==3.10.*
   - pip
   - git
   - configargparse
   - einops
-  - fastai::opencv-python-headless
+  - opencv-python-headless
   - gdown
   - kornia
   - loguru
   - numpy
   - omegaconf
   - openh264
-  - pyrender==0.1.23
+  - pyrender
   - pytorch
   - pytorch-cuda
   - pytorch3d::pytorch3d
